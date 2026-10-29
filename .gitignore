@@ -1,0 +1,11 @@
+﻿# 本地预览截图（不发布）
+preview.png
+_preview*.png
+_*.png
+
+# 系统 / 编辑器
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/

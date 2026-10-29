@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mingyu Zhou (周明彧) · Undergraduate Researcher, UESTC</title>
+<meta name="description" content="Mingyu Zhou (周明彧) is an undergraduate student in Network Engineering at the School of Information and Communication Engineering, University of Electronic Science and Technology of China (UESTC). Work on single-image reflection removal and infrared small target detection; now reading toward embodied intelligence." />
+<meta name="author" content="Mingyu Zhou" />
+<link rel="canonical" href="https://zmy1234567890.github.io/" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Mingyu Zhou (周明彧) · UESTC" />
+<meta property="og:description" content="Undergraduate student at UESTC working on single-image reflection removal and infrared small target detection." />
+<meta property="og:url" content="https://zmy1234567890.github.io/" />
+<meta property="profile:first_name" content="Mingyu" />
+<meta property="profile:last_name" content="Zhou" />
+<meta name="twitter:card" content="summary" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mingyu Zhou",
+  "alternateName": "周明彧",
+  "url": "https://zmy1234567890.github.io/",
+  "jobTitle": "Undergraduate Student",
+  "email": "mailto:2024010904031@std.uestc.edu.cn",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Electronic Science and Technology of China",
+    "alternateName": "电子科技大学",
+    "department": {
+      "@type": "Organization",
+      "name": "School of Information and Communication Engineering"
+    }
+  },
+  "sameAs": [
+    "https://github.com/zmy1234567890",
+    "https://huggingface.co/zmy1234567890"
+  ],
+  "knowsAbout": [
+    "Single-image reflection removal",
+    "Image restoration",
+    "Infrared small target detection",
+    "Embodied intelligence"
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --bg:#fbfaf7;
+    --panel:#ffffff;
+    --ink:#14171c;
+    --ink-soft:#3d444f;
+    --muted:#6c7482;
+    --line:#e7e4dd;
+    --accent:#0e5a68;
+    --accent-soft:#e8f1f2;
+    --underline:rgba(14,90,104,.32);
+    --radius:14px;
+    --maxw:860px;
+    --shadow:0 1px 2px rgba(20,23,28,.04), 0 8px 24px rgba(20,23,28,.05);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Songti SC",SimSun,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f1114;
+      --panel:#161a1f;
+      --ink:#e9ecef;
+      --ink-soft:#c3c9d2;
+      --muted:#98a1ad;
+      --line:#252a31;
+      --accent:#7fcbd6;
+      --accent-soft:#14262b;
+      --underline:rgba(127,203,214,.35);
+      --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 28px rgba(0,0,0,.35);
+    }
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font:16px/1.68 var(--sans);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  ::selection{background:var(--accent-soft);color:var(--ink)}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+  img{max-width:100%;height:auto}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  .skip{
+    position:absolute;left:-9999px;top:0;background:var(--panel);color:var(--ink);
+    padding:10px 16px;border:1px solid var(--line);border-radius:0 0 10px 0;z-index:50;
+  }
+  .skip:focus{left:0}
+
+  /* ---------- top bar ---------- */
+  .bar{
+    position:sticky;top:0;z-index:30;
+    background:color-mix(in srgb, var(--bg) 86%, transparent);
+    -webkit-backdrop-filter:saturate(180%) blur(12px);
+    backdrop-filter:saturate(180%) blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .bar-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;height:56px}
+  .brand{font-family:var(--serif);font-size:16px;color:var(--ink);letter-spacing:.01em}
+  .brand:hover{text-decoration:none;color:var(--accent)}
+  .bar nav{display:flex;gap:18px;font-size:13.5px}
+  .bar nav a{color:var(--muted);letter-spacing:.02em}
+  .bar nav a:hover{color:var(--accent);text-decoration:none}
+  @media (max-width:640px){ .bar nav{display:none} }
+
+  /* ---------- hero ---------- */
+  .hero{display:flex;gap:26px;align-items:center;padding:46px 0 10px}
+  .hero-text{flex:1 1 auto;min-width:0}
+  .avatar{
+    width:98px;height:98px;flex:0 0 98px;border-radius:50%;
+    display:grid;place-items:center;
+    background:linear-gradient(150deg,#11697a,#083d47);
+    color:#eaf7f8;font-family:var(--serif);font-size:33px;letter-spacing:.02em;
+    border:1px solid rgba(255,255,255,.16);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 10px 22px rgba(14,90,104,.22);
+    user-select:none;
+  }
+  .hero h1{
+    font-family:var(--serif);font-weight:600;
+    font-size:clamp(29px,4.4vw,40px);line-height:1.1;letter-spacing:-.01em;
+    margin:0 0 10px;
+  }
+  .hero h1 .zh{
+    font-family:"Songti SC","Noto Serif SC",SimSun,serif;
+    font-size:.58em;font-weight:400;color:var(--muted);margin-left:8px;letter-spacing:.06em;
+  }
+  .role{margin:0 0 6px;font-size:15.5px;font-weight:600;color:var(--ink-soft);letter-spacing:.01em}
+  .aff{margin:0 0 16px;font-size:14.5px;line-height:1.6;color:var(--muted)}
+  .aff abbr{text-decoration:none;border:none}
+  .hero-links{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+  .hero-links a{
+    display:inline-flex;align-items:center;gap:7px;
+    padding:6px 12px;border-radius:999px;
+    background:var(--panel);border:1px solid var(--line);
+    font-size:13.5px;color:var(--ink-soft);box-shadow:var(--shadow);
+    transition:border-color .16s ease,color .16s ease;
+  }
+  .hero-links a:hover{color:var(--accent);border-color:var(--accent);text-decoration:none}
+  .hero-links svg{width:15px;height:15px;flex:none;opacity:.8}
+  @media (max-width:560px){
+    .hero{flex-direction:column;align-items:flex-start;gap:18px;padding-top:34px}
+    .hero-text{width:100%}
+    .avatar{width:78px;height:78px;flex-basis:78px;font-size:27px}
+  }
+
+  /* ---------- sections ---------- */
+  main{padding-bottom:8px}
+  section{margin:46px 0;scroll-margin-top:74px}
+  .sec-title{
+    display:flex;align-items:center;gap:14px;margin:0 0 18px;
+    font-family:var(--sans);font-size:12.5px;font-weight:650;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+  }
+  .sec-title::after{content:"";flex:1;height:1px;background:var(--line)}
+  .prose p{margin:0 0 12px;color:var(--ink-soft);font-size:15.5px;line-height:1.72;max-width:74ch}
+  .prose p:last-child{margin-bottom:0}
+  .prose strong{color:var(--ink);font-weight:600}
+  .prose a{text-decoration:underline;text-decoration-color:var(--underline);text-underline-offset:3px}
+  .prose a:hover{text-decoration-color:var(--accent)}
+
+  /* ---------- news ---------- */
+  .news{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .news li{display:grid;grid-template-columns:76px 1fr;gap:16px;font-size:15px;color:var(--ink-soft)}
+  .news time{font-size:13px;color:var(--muted);letter-spacing:.02em;padding-top:2px;font-variant-numeric:tabular-nums}
+  .news em{font-style:normal;color:var(--ink);font-weight:500}
+  @media (max-width:560px){ .news li{grid-template-columns:1fr;gap:1px} .news time{padding-top:6px} }
+
+  /* ---------- research entries ---------- */
+  .entry{padding:20px 0;border-top:1px solid var(--line)}
+  .entry:first-of-type{border-top:none;padding-top:2px}
+  .entry h3{font-family:var(--serif);font-weight:600;font-size:19.5px;line-height:1.4;margin:0 0 4px;letter-spacing:-.005em}
+  .entry .when{font-size:12.5px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+  .entry p{margin:9px 0 0;font-size:15px;line-height:1.7;color:var(--ink-soft);max-width:74ch}
+  .pts{margin:10px 0 0;padding-left:18px;color:var(--ink-soft);font-size:15px;line-height:1.68}
+  .pts li{margin:5px 0}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chip{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:13px;padding:5px 11px;border-radius:8px;
+    background:var(--accent-soft);color:var(--accent);
+    border:1px solid transparent;transition:border-color .16s ease;
+  }
+  .chip:hover{border-color:var(--accent);text-decoration:none}
+  .chip svg{width:14px;height:14px;opacity:.85}
+
+  /* ---------- publications ---------- */
+  .pub{padding:20px 0;border-top:1px solid var(--line)}
+  .pub:first-of-type{border-top:none;padding-top:2px}
+  .pub-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+  .tag-id{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:11.5px;font-weight:600;letter-spacing:.08em;
+    color:var(--accent);background:var(--accent-soft);padding:4px 7px;border-radius:5px;
+  }
+  .badge{
+    font-size:11px;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted);border:1px solid var(--line);padding:3px 8px;border-radius:999px;
+  }
+  .pub-title{font-family:var(--serif);font-weight:600;font-size:18px;line-height:1.42;margin:0 0 7px}
+  .pub-authors{margin:0 0 6px;font-size:14.5px;color:var(--ink-soft);line-height:1.6}
+  .pub-authors b{color:var(--ink);font-weight:650}
+  .pub-meta{margin:0;font-size:14px;color:var(--muted);line-height:1.6}
+  .pub-meta a{text-decoration:underline;text-decoration-color:var(--underline);text-underline-offset:3px}
+
+  /* ---------- cards ---------- */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media (max-width:640px){ .grid{grid-template-columns:1fr} }
+  .card{
+    display:block;padding:16px 18px;background:var(--panel);
+    border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    transition:transform .16s ease,border-color .16s ease;
+  }
+  .card:hover{border-color:var(--accent);transform:translateY(-2px);text-decoration:none}
+  @media (prefers-reduced-motion:reduce){ .card{transition:none} .card:hover{transform:none} }
+  .card .kind{margin:0 0 5px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+  .card h3{margin:0 0 5px;font-family:var(--serif);font-size:16.5px;font-weight:600;color:var(--ink);line-height:1.4;word-break:break-word}
+  .card p{margin:0;font-size:13.5px;line-height:1.58;color:var(--muted)}
+
+  /* ---------- education / contact ---------- */
+  .edu-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+  .edu h3{margin:0;font-family:var(--serif);font-size:17.5px;font-weight:600}
+  .edu .place{margin:5px 0 0;font-size:14.5px;color:var(--ink-soft)}
+  .edu .dates{margin:0;font-size:13px;color:var(--muted);letter-spacing:.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .contact{display:grid;gap:10px;font-size:15px;color:var(--ink-soft)}
+  .contact .row{display:grid;grid-template-columns:112px 1fr;gap:14px}
+  .contact .k{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-top:3px;white-space:nowrap}
+  .contact a{text-decoration:underline;text-decoration-color:var(--underline);text-underline-offset:3px}
+  .contact a:hover{text-decoration-color:var(--accent)}
+  @media (max-width:560px){ .contact .row{grid-template-columns:1fr;gap:1px} .contact .k{padding-top:8px} }
+
+  footer{
+    margin-top:56px;border-top:1px solid var(--line);padding:22px 0 44px;
+    font-size:12.5px;color:var(--muted);
+    display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+  }
+  footer a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+  footer a:hover{color:var(--accent)}
+
+  @media print{
+    .bar,.skip{display:none}
+    body{background:#fff;color:#000;font-size:11pt}
+    a{color:#000}
+    .card,.avatar{box-shadow:none}
+    section{margin:22px 0}
+  }
+</style>
+</head>
+
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <div class="wrap bar-inner">
+    <a class="brand" href="#top">Mingyu Zhou</a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#open-source">Open Source</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <section class="hero" aria-labelledby="name">
+    <div class="avatar" aria-hidden="true">MZ</div>
+    <div class="hero-text">
+      <h1 id="name">Mingyu Zhou <span class="zh" lang="zh">周明彧</span></h1>
+      <p class="role">Undergraduate Student, Network Engineering</p>
+      <p class="aff">
+        School of Information and Communication Engineering<br />
+        University of Electronic Science and Technology of China (<abbr title="University of Electronic Science and Technology of China">UESTC</abbr>), Chengdu, China
+      </p>
+      <ul class="hero-links">
+        <li>
+          <a href="mailto:2024010904031@std.uestc.edu.cn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+            2024010904031@std.uestc.edu.cn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/zmy1234567890">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.34c.85 0 1.71.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://huggingface.co/zmy1234567890">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6a9.4 9.4 0 0 0-9.4 9.4c0 2.1.7 4 1.9 5.6l-1 2.6c-.2.5.3 1 .8.8l2.5-1a9.4 9.4 0 1 0 5.2-17.4Zm-3.6 7.3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm7.2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM8 14.6c.9 1.2 2.3 1.9 4 1.9s3.1-.7 4-1.9c.2-.3.6-.3.8-.1.2.2.3.6.1.9-1.1 1.5-2.9 2.3-4.9 2.3s-3.8-.8-4.9-2.3c-.2-.3-.1-.7.1-.9.2-.2.6-.2.8.1Z"/></svg>
+            Hugging Face
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="about-title">
+    <h2 class="sec-title" id="about-title">About</h2>
+    <div class="prose">
+      <p>
+        I am an undergraduate student in Network Engineering at the School of Information and
+        Communication Engineering, UESTC. I am currently studying single-image reflection removal
+        for tinted vehicle glass, and I was a co-author of STGBD-Net (IEEE TGRS, 2026).
+      </p>
+      <p>
+        So far most of my work has been in low-level vision and its evaluation. I am now reading
+        toward embodied intelligence &mdash; perception that has to support action, not only
+        restoration &mdash; and I hope to move in that direction after graduation.
+      </p>
+      <p>
+        <strong>Research interests:</strong> single-image reflection removal &middot; image
+        restoration &middot; infrared small target detection &middot; embodied intelligence
+        (exploring)
+      </p>
+    </div>
+  </section>
+
+  <section id="news" aria-labelledby="news-title">
+    <h2 class="sec-title" id="news-title">News</h2>
+    <ul class="news">
+      <li>
+        <time datetime="2026-10">Oct 2026</time>
+        <span>Released <em>TintedGlass-RDT</em>, a paired dataset for tinted-glass reflection removal, together with a fine-tuned RDNet checkpoint on Hugging Face.</span>
+      </li>
+      <li>
+        <time datetime="2026">2026</time>
+        <span><em>STGBD-Net</em> published in <em>IEEE Transactions on Geoscience and Remote Sensing</em> (second author).</span>
+      </li>
+      <li>
+        <time datetime="2026">2026</time>
+        <span>One manuscript is under double-blind review; the title is withheld to respect the anonymity policy.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="research" aria-labelledby="research-title">
+    <h2 class="sec-title" id="research-title">Research</h2>
+
+    <article class="entry">
+      <h3>Single-image reflection removal for tinted vehicle glass</h3>
+      <p class="when">2026 &ndash; present &middot; primary project</p>
+      <p>
+        Ordinary glass returns a bright, well-behaved reflection; a tinted car window does not. It
+        reflects very little and, where the photographer blocks the light path, the reflected content
+        is replaced by something dark while the illumination also drops. I built a controlled
+        window-glass rig and collected paired captures (reflection-contaminated input, occluder-based
+        reflection-free reference) across indoor and outdoor scenes, with a frozen 15-scene test panel.
+      </p>
+      <ul class="pts">
+        <li>A region-based training term is worth <strong>+3&ndash;4&nbsp;dB</strong> over no region term, but <em>where</em> the region is drawn makes no significant difference &mdash; so the gain does not come from occluder-specific structure.</li>
+        <li>The global photometric level of the transmission layer is <strong>not identifiable from a single frame</strong>; the honest comparison therefore needs a reference and a per-image calibration.</li>
+        <li>Automatic occluder-region masks are not measurement-grade: threshold criteria either shrink to the darkest core or drift over the scene, and cross-domain localisation is close to chance.</li>
+      </ul>
+      <div class="chips">
+        <a class="chip" href="https://huggingface.co/datasets/zmy1234567890/tintedglass-rdt-synth">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+          Dataset card
+        </a>
+        <a class="chip" href="https://huggingface.co/zmy1234567890/tintedglass-rdnet-synth-ft">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/></svg>
+          Model checkpoint
+        </a>
+      </div>
+    </article>
+
+    <article class="entry">
+      <h3>Spatio-temporal gradient basis decomposition for infrared small targets</h3>
+      <p class="when">2024 &ndash; 2026 &middot; second author</p>
+      <p>
+        STGBD-Net replaces attention-style feature fusion with gradient basis decomposition: eight
+        directional gradient kernels span the basis, and a light three-stage U-shaped backbone keeps
+        the model at <strong>0.27&nbsp;M parameters / 1.51&nbsp;GFLOPs</strong> in the single-frame
+        variant. The multi-frame variant adds a temporal gradient module that uses inter-frame
+        differences as temporal bases, suppressing static background while enhancing moving targets.
+      </p>
+      <div class="chips">
+        <a class="chip" href="https://doi.org/10.1109/TGRS.2026.3701189">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a4 4 0 0 0 6 .5l3-3a4 4 0 0 0-5.7-5.7L11.5 6.6"/><path d="M14 11a4 4 0 0 0-6-.5l-3 3a4 4 0 0 0 5.7 5.7L12.5 17.4"/></svg>
+          IEEE TGRS &middot; DOI
+        </a>
+      </div>
+    </article>
+  </section>
+
+  <section id="publications" aria-labelledby="pub-title">
+    <h2 class="sec-title" id="pub-title">Publications</h2>
+
+    <article class="pub">
+      <div class="pub-top">
+        <span class="tag-id">[J1]</span>
+        <span class="badge">Journal</span>
+        <span class="badge">2nd author</span>
+      </div>
+      <h3 class="pub-title">STGBD-Net: Spatio-Temporal Gradient Basis Decomposition Network for Infrared Small Target Detection</h3>
+      <p class="pub-authors">
+        Chen Hu, <b>Mingyu Zhou</b>, Shuai Yuan, Hongbo Hu, Zhenming Peng, Tian Pu, Xiying Li
+      </p>
+      <p class="pub-meta">
+        <em>IEEE Transactions on Geoscience and Remote Sensing</em>, vol.&nbsp;64, Art.&nbsp;no.&nbsp;5006714, 2026.
+        &nbsp;<a href="https://doi.org/10.1109/TGRS.2026.3701189">doi:10.1109/TGRS.2026.3701189</a>
+      </p>
+    </article>
+
+    <article class="pub">
+      <div class="pub-top">
+        <span class="tag-id">[M1]</span>
+        <span class="badge">Under review</span>
+      </div>
+      <h3 class="pub-title">Manuscript under double-blind review</h3>
+      <p class="pub-meta">
+        A diagnostic study of what supervision is identifiable in single-image reflection removal
+        under a tinted-glass data protocol. 2026. Title and venue withheld while the review is
+        anonymous.
+      </p>
+    </article>
+  </section>
+
+  <section id="open-source" aria-labelledby="os-title">
+    <h2 class="sec-title" id="os-title">Open Source</h2>
+    <div class="grid">
+      <a class="card" href="https://huggingface.co/datasets/zmy1234567890/tintedglass-rdt-synth">
+        <p class="kind">Dataset &middot; Hugging Face</p>
+        <h3>TintedGlass-RDT</h3>
+        <p>Paired tinted-glass captures for reflection removal: input, reflection-free reference, signed reflection layer, and region masks.</p>
+      </a>
+      <a class="card" href="https://huggingface.co/zmy1234567890/tintedglass-rdnet-synth-ft">
+        <p class="kind">Model &middot; Hugging Face</p>
+        <h3>tintedglass-rdnet-synth-ft</h3>
+        <p>RDNet checkpoint fine-tuned for tinted-glass single-image reflection removal.</p>
+      </a>
+      <a class="card" href="https://github.com/zmy1234567890/signalagent-uestc">
+        <p class="kind">Code &middot; GitHub</p>
+        <h3>signalagent-uestc</h3>
+        <p>Course project on signal acquisition and analysis (Python).</p>
+      </a>
+      <a class="card" href="https://github.com/zmy1234567890/enrolled">
+        <p class="kind">Code &middot; GitHub</p>
+        <h3>enrolled</h3>
+        <p>ADC sampling, DMA transfer and FFT spectrum analysis on a microcontroller (C).</p>
+      </a>
+      <a class="card" href="https://github.com/zmy1234567890/dictionary">
+        <p class="kind">Code &middot; GitHub</p>
+        <h3>dictionary</h3>
+        <p>A vocabulary trainer for English study, built as a data-structures course project (Python).</p>
+      </a>
+      <a class="card" href="https://github.com/zmy1234567890">
+        <p class="kind">Profile &middot; GitHub</p>
+        <h3>More repositories &rarr;</h3>
+        <p>Coursework, notes and small tools.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="education" aria-labelledby="edu-title">
+    <h2 class="sec-title" id="edu-title">Education</h2>
+    <div class="edu">
+      <div class="edu-top">
+        <h3>B.Eng. in Network Engineering</h3>
+        <p class="dates">Sep 2024 &ndash; Jun 2028 (expected)</p>
+      </div>
+      <p class="place">School of Information and Communication Engineering, University of Electronic Science and Technology of China</p>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 class="sec-title" id="contact-title">Contact</h2>
+    <div class="contact">
+      <div class="row">
+        <span class="k">Email</span>
+        <span><a href="mailto:2024010904031@std.uestc.edu.cn">2024010904031@std.uestc.edu.cn</a> &nbsp;<span aria-hidden="true">·</span>&nbsp; <a href="mailto:272401137@qq.com">272401137@qq.com</a></span>
+      </div>
+      <div class="row">
+        <span class="k">GitHub</span>
+        <span><a href="https://github.com/zmy1234567890">github.com/zmy1234567890</a></span>
+      </div>
+      <div class="row">
+        <span class="k">Hugging Face</span>
+        <span><a href="https://huggingface.co/zmy1234567890">huggingface.co/zmy1234567890</a></span>
+      </div>
+      <div class="row">
+        <span class="k">Address</span>
+        <span>Chengdu, Sichuan, China</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>&copy; 2026 Mingyu Zhou (周明彧). Last updated October 2026.</span>
+  <span>Single static page &middot; <a href="#top">Back to top</a></span>
+</footer>
+
+</body>
+</html>
